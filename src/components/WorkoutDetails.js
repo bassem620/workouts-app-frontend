@@ -5,7 +5,7 @@ const WorkoutDetails = ({workout}) => {
 
   const {dispatch} = useWorkoutsContext();
   const handleDelete = async () => {
-    const response = await fetch('https://mysterious-retreat-55329.herokuapp.com/api/workouts/' + workout._id, {
+    const response = await fetch('https://workouts-backend-eg.herokuapp.com/api/workouts/' + workout._id, {
       method: 'DELETE'
     })
     const json = await response.json()

@@ -12,7 +12,7 @@ const WorkoutForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const workout = {title, load, reps};
-    const response = await fetch('https://mysterious-retreat-55329.herokuapp.com/api/workouts',{
+    const response = await fetch('https://workouts-backend-eg.herokuapp.com/api/workouts',{
       method: 'POST',
       body: JSON.stringify(workout),
       headers: {'Content-Type' : 'application/json'}
